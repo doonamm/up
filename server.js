@@ -1,11 +1,12 @@
 require('dotenv').config();
 const express = require('express');
 const app = express();
-const port  = 3000;
 const formidable = require('formidable');
 const fs = require('fs');
 const path = require('path');
 const cors = require('cors');
+
+const port  = process.env.PORT;
 
 var corsOptions = {
     origin: 'http://example.com',
